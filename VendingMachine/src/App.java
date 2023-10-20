@@ -37,5 +37,8 @@ public class App {
             System.out.println(prod);
         }
         //System.out.println("Hello, World!");
+
+        MainFrame myFrame = new MainFrame();
+        myFrame.initialize();
     }
 }
