@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Domain.Bottle;
+import Domain.HotDrink;
 import Domain.PrType;
 import Domain.Product;
 import Services.CoinDispenser;
@@ -24,11 +25,13 @@ public class App {
         Product p2 = new Product("Chokolate", 130, ptSnack);
         Product p3 = new Product("Nuts", 70, ptSnack);
         Bottle b1 = new Bottle("Cola", 100, 0.5);
+        HotDrink d1 = new HotDrink("Coffee", 50, 70);
 
         products.add(p1);
         products.add(p2);
         products.add(p3);
         products.add(b1);
+        products.add(d1);
 
         VendingMachine venMach1 = new VendingMachine(hold1, disp, products);
 
