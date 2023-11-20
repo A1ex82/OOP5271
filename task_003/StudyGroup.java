@@ -24,9 +24,4 @@ class StudyGroup implements Iterable<Student> {
     public Iterator<Student> iterator() {
         return students.iterator();
     }
-
-    @Override
-    public String toString() {
-        return "StudyGroup";
-    }
 }
