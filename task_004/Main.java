@@ -23,6 +23,7 @@ public class Main {
 
         // Обмен местами элементов в парах
         Pair.swapPairs(new Pair[]{pair1, pair2});
+        
 
         // Вывод результатов обмена
         System.out.println("\nAfter swap:");
