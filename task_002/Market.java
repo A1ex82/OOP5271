@@ -65,10 +65,15 @@ public class Market<T> implements QueueBehaviour<T>, MarketBehaviour<T> {
         this.orders = new LinkedList<>();
     }
 
-    @Override
-    public void enqueue(T item) {
-        // Реализация добавления элемента в очередь
-    }
+/**
+ * Adds an item to the queue.
+ *
+ * @param item The item to be added.
+ */
+@Override
+public void enqueue(T item) {
+    // Implementation to add an element to the queue
+}
 
     @Override
     public T dequeue() {
