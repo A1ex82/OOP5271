@@ -12,8 +12,8 @@ public class FruitBoxController {
         orangeBox.addFruit(new Orange(0.6));
 
         FruitBox<Orange> orangeBox2 = new FruitBox<>();
-        orangeBox2.addFruit(new Orange(0.5));
-        orangeBox2.addFruit(new Orange(0.6));
+        orangeBox2.addFruit(new Orange(0.1));
+        orangeBox2.addFruit(new Orange(0));
 
         // Вывод веса каждой коробки
         // System.out.println("Weight of Apple Box: " + appleBox.getWeight());

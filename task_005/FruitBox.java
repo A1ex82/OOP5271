@@ -14,6 +14,11 @@ class FruitBox<T extends Fruit> {
         fruits.add(fruit);
     }
 
+    /**
+     * Calculates and returns the total weight of all the fruits in the list.
+     *
+     * @return the total weight of the fruits
+     */
     public double getWeight() {
         double totalWeight = 0;
         for (T fruit : fruits) {
@@ -24,15 +29,16 @@ class FruitBox<T extends Fruit> {
 
     public void transferFruits(FruitBox<T> destinationBox) {
         // Проверяем, что типы фруктов совпадают
-        if (!fruits.isEmpty() && destinationBox.fruits.isEmpty()) {
+        if (!fruits.isEmpty() && destinationBox.fruits.isEmpty()
+                && fruits.getClass().equals(destinationBox.fruits.getClass())) {
             // Пересыпаем фрукты
             destinationBox.fruits.addAll(fruits);
             fruits.clear();
         } else {
-            System.out.println("Cannot transfer fruits. Types do not match or destination box is not empty.");
+            System.out.println("Cannot transfer fruits. Types do not match or boxes are not empty.");
         }
-        
     }
+        
 }
     
     
